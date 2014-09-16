@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PopUp</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<link type="text/css" rel="styleSheet" media="all" href="popup.css">
+		<link type="text/css" rel="styleSheet" media="all" href="shared.css">
+	</head>
+	<body>
+		<div class='cell'>
+			<div class='cell-header'>
+				<div class='cell-title'>
+					CSS TABLE METHOD
+				</div>
+				<div class='cell-button'>
+					<div class='del'></div>
+					<button id="zIndexOpen">
+						ОТКРЫТЬ
+					</button>
+				</div>
+			</div>
+			<div class='cell-body'>
+				<div class='cell-description'>
+					<p>
+						Родительский div отображается в виде таблицы, дочерний div отображается в виде ячейки. div-ячейке устанавливается вывод содержимого по-середине
+					</p>
+					Плюсы:
+					<ul>
+						<li>
+							Хорошо подходит для динамического содержимого popup
+						</li>
+					</ul>
+					Минусы:
+					<ul>
+						<li>
+							Не работает в ранних версиях IE
+						</li>
+						<li>
+							Требуется дополнительный HTML тэг
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class='cell'>
+			<div class='cell-header'>
+				<div class='cell-title'>
+					JS SET TOP AND LEFT
+				</div>
+				<div class='cell-button'>
+					<div class='del'></div>
+					<button id="minHeightOpen">
+						ОТКРЫТЬ
+					</button>
+				</div>
+			</div>
+			<div class='cell-body'>
+				<div class='cell-description'>
+					<p>
+						В сценарии JS div-элементу устанавливаются свойства top и left
+					</p>
+					Плюсы:
+					<ul>
+						<li>
+							Подходит для динамического содержимого
+						</li>
+					</ul>
+					Минусы:
+					<ul>
+						<li>
+							Центрируется средствами JS
+						</li>
+					</ul>
+					<p class="addition">
+						* Для возвышения над другими элементами используется min-height
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class='cell'>
+			<div class='cell-header'>
+				<div class='cell-title'>
+					ABSOLUTE POSITIONING AND STRETCHING
+				</div>
+				<div class='cell-button'>
+					<div class='del'></div>
+					<button id="stretchingOpen">
+						ОТКРЫТЬ
+					</button>
+				</div>
+			</div>
+			<div class='cell-body'>
+				<div class='cell-description'>
+					<p>
+						Расстояния от всех четырех краев div-элемента до границ браузера устанавливается в 0. Свойство margin: auto расположит div-элемент в центре браузера
+					</p>
+					Плюсы:
+					<ul>
+						<li>
+							Не выявлены
+						</li>
+					</ul>
+					Минусы:
+					<ul>
+						<li>
+							Не работает в ранних версиях IE
+						</li>
+						<li>
+							Надо указывать высоту div-элемента, иначе растягивается по всей высоте браузера
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class='cell'>
+			<div class='cell-header'>
+				<div class='cell-title'>
+					ABSOLUTE POSITIONING AND NEGATIVE MARGIN
+				</div>
+				<div class='cell-button'>
+					<div class='del'></div>
+					<button id="negativMarginOpen">
+						ОТКРЫТЬ
+					</button>
+				</div>
+			</div>
+			<div class='cell-body'>
+				<div class='cell-description'>
+					<p>
+						Левый верхний угол div-элемента установить в центре браузера. В сценарии JS свойство margin подвинуть div-элемент влево вверх, что бы он оказался в центре
+					</p>
+					Плюсы:
+					<ul>
+						<li>
+							Подходит для динамического содержимого
+						</li>
+					</ul>
+					Минусы:
+					<ul>
+						<li>
+							Центрируется средствами JS
+						</li>
+					</ul>
+					<p class="addition">
+						Если знать размеры div-элемента, то можно обойтись без JS
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div id='popup_bg'>
+			<div id='popup_dummy_container'>
+				<div id='popup_container'>
+					<div class='cell-header'>
+						<div class='cell-title'>
+							Я - POPUP
+						</div>
+						<div class='cell-button'>
+							<div class='del'></div>
+							<button id="popup_close">
+								ЗАКРЫТЬ
+							</button>
+						</div>
+					</div>
+					<div class='cell-popup'>
+						<div class='cell-description'>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

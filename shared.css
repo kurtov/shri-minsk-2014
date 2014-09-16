@@ -1,0 +1,143 @@
+#popup_bg {
+	display: none;
+	background-color: rgba(0,0,0,0.5);
+	left: 0;
+	top: 0;
+	position: fixed;
+	width: 100%;
+}
+#popup_container {
+	background-color: #c5c5c5;
+	width: 50%; /*600px;*/
+	/*height: 300px;*/
+	-webkit-border-top-left-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 0;
+	-moz-border-radius-bottomright: 0;
+	border-bottom-right-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+	-moz-border-radius-bottomleft: 0;
+	border-bottom-left-radius: 0;
+}
+
+div.cell {
+	display: inline-block;
+	padding: 7px;
+	width: 503px;
+	height: 303px;
+	vertical-align: top;
+}
+
+div.cell-header {
+	height: 30px;
+	border: solid 1px #d0d0d0;
+	background-color: #fafafa;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+div.cell-header div.cell-title {
+	display: inline-block;
+	float: left;
+	padding-right: 12px;
+	padding-left: 12px;
+	height: 30px;
+	line-height: 30px;
+	color: #4e5962;
+	vertical-align: top;
+}
+
+div.cell-header div.cell-button {
+	display: inline-block;
+	float: right;
+	height: 30px;
+	line-height: 30px;
+}
+
+div.cell-header div.cell-button div.del {
+	height: 12.6px;
+	margin-top: 8.7px;
+	display: inline-block;
+	vertical-align: top;
+	border-left: solid #d0d0d0 1px;
+}
+
+div.cell-header div.cell-button button {
+	display: inline-block;
+	padding-right: 12px;
+	padding-left: 12px;
+	color: #4e5962;
+	vertical-align: top;
+	font: inherit;
+}
+
+div.cell-header div.cell-button button:hover {
+	color: #27aad7;
+	cursor: pointer;
+}
+
+div.cell-body {
+    padding: 12px;
+    height: 246px;
+    border: solid 1px #d0d0d0;
+    border-top: 0 none;
+    background-color: #fff;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+
+div.cell-body div.cell-description{
+	overflow: auto;
+	color: #4e5962;
+	resize: none;
+}
+
+body {
+	background-color: #f4f4f4;
+}
+
+* {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	margin: 0;
+	outline: 0;
+	border: 0;
+	background-color: transparent;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: Arial;
+}
+
+div.cell-description p {
+	padding-bottom: 10px
+}
+
+div.cell-description p.addition {
+	padding-top: 10px
+}
+
+div.cell-popup {
+	padding: 12px;
+    border: solid 1px #d0d0d0;
+    border-top: 0 none;
+    background-color: #fff;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+
+div.cell-popup div.cell-description{
+	overflow: auto;
+	color: #4e5962;
+	resize: none;
+}
